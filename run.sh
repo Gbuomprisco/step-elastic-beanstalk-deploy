@@ -104,7 +104,7 @@ then
 fi
 
 debug "Pushing to AWS eb servers."
-git aws.push
+eb deploy
 if [ $? -ne "0" ]
 then
     fail "Unable to push to Amazon Elastic Beanstalk"   
